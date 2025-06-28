@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Tayabas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header2">
+        <nav>
+            <a href="index.html"><img src="index/logo.png"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul class="list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="governance.html">GOVERNANCE</a></li>
+                    <li><a href="barangay.html">BARANGAY</a></li>
+                    <li><a href="heritage.html">HERITAGE</a></li>
+                    <li><a href="tourism.html">TOURISM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>BARANGAY</h1>
+        <p>Tayabas has 66 Barangays as shown in the following table.</p>
+    </section>
+    <br><br>
+    <input id="myInput" type="text" placeholder="Search Here..">
+    <br><br>
+    <table class="table table-hover border-primary" id="barangayTable">
+        <thead class="table-info">
+            <tr>
+                <th>Barangay</th>
+                <th>Population <br>Percentage <br>(2020)</th>
+                <th>Population <br>(2020)</th>
+                <th>Population <br>(2015)</th>
+                <th>Change <br>(2015 2020)</th>
+                <th>Annual <br>Population <br>Growth Rate <br>(2015 2020)</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <td data-label="Barangay">Alitao</td>
+            <td data-label="Population Percentage (2020)">0.13&percnt;</td>
+            <td data-label="Population (2020)">149</td>
+            <td data-label="Population (2015)">313</td>
+            <td data-label="Change (2015 2020)" style="color: red"></i>-52.40&percnt; <i class="fa-solid fa-caret-down"></i></td> 
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-14.46&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Alsam Ibaba</td>
+            <td data-label="Population Percentage (2020)">0.67&percnt;</td>
+            <td data-label="Population (2020)">753</td>
+            <td data-label="Population (2015)">754</td>
+            <td data-label="Change (2015-2020)" style="color: red">-0.13&percnt; <i class="fa-solid fa-caret-down"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-0.03&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Alsam Ilaya</td>
+            <td data-label="Population Percentage (2020)">0.33&percnt;</td>
+            <td data-label="Population (2020)">374</td>
+            <td data-label="Population (2015)">324</td>
+            <td data-label="Change (2015 2020)">15.43&percnt; <i class="fa-solid fa-caret-up"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)">3.07&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Alupay</td>
+            <td data-label="Population Percentage (2020)">0.21&percnt;</td>
+            <td data-label="Population (2020)">238</td>
+            <td data-label="Population (2015)">196</td>
+            <td data-label="Change (2015-20202)">21.42&percnt; <i class="fa-solid fa-caret-up"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)">4.17&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Angeles Zone I</td>
+            <td data-label="Population Percentage (2020)">1.77&percnt;</td>
+            <td data-label="Population (2020)">1,995</td>
+            <td data-label="Population (2015)">2,437</td>
+            <td data-label="Change (2015-20202)" style="color: red">-18.14&percnt; <i class="fa-solid fa-caret-down"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">4.12&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Angeles Zone II</td>
+            <td data-label="Population Percentage (2020)">0.82&percnt;</td>
+            <td data-label="Population (2020)">925</td>
+            <td data-label="Population (2015)">1,045</td>
+            <td data-label="Change (2015-20202)" style="color: red">-11.48&percnt; <i class="fa-solid fa-caret-down"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-2.53&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Angeles Zone III</td>
+            <td data-label="Population Percentage (2020)">0.19&percnt;</td>
+            <td data-label="Population (2020)">210</td>
+            <td data-label="Population (2015)">225</td>
+            <td data-label="Change (2015-20202)" style="color: red">-6.67&percnt; <i class="fa-solid fa-caret-down"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-1.44&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Angeles Zone IV</td>
+            <td data-label="Population Percentage (2020)">0.91&percnt;</td>
+            <td data-label="Population (2020)">1,029</td>
+            <td data-label="Population (2015)">1,295</td>
+            <td data-label="Change (2015-20202)" style="color: red">-20.54&percnt; <i class="fa-solid fa-caret-down"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-4.72&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Angustias Zone I</td>
+            <td data-label="Population Percentage (2020)">0.37&percnt;</td>
+            <td data-label="Population (2020)">412</td>
+            <td data-label="Population (2015)">591</td>
+            <td data-label="Change (2015-20202)" style="color: red">-30.29&percnt; <i class="fa-solid fa-caret-down"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-7.31&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Angustias Zone II</td>
+            <td data-label="Population Percentage (2020)">0.25&percnt;</td>
+            <td data-label="Population (2020)">283</td>
+            <td data-label="Population (2015)">324</td>
+            <td data-label="Change (2015-20202)" style="color: red">-12.65&percnt; <i class="fa-solid fa-caret-down"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-2.81&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Angustias Zone III</td>
+            <td data-label="Population Percentage (2020)">0.38&percnt;</td>
+            <td data-label="Population (2020)">427</td>
+            <td data-label="Population (2015)">742</td>
+            <td data-label="Change (2015-20202)" style="color: red">-42.45&percnt; <i class="fa-solid fa-caret-down"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-10.98&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Angustias Zone IV</td>
+            <td data-label="Population Percentage (2020)">1.20&percnt;</td>
+            <td data-label="Population (2020)">1,353</td>
+            <td data-label="Population (2015)">1,511</td>
+            <td data-label="Change (2015-20202)" style="color: red">-10.46&percnt; <i class="fa-solid fa-caret-down"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-2.30&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Anos</td>
+            <td data-label="Population Percentage (2020)">1.72&percnt;</td>
+            <td data-label="Population (2020)">1,937</td>
+            <td data-label="Population (2015)">1,604 </td>
+            <td data-label="Change (2015-20202)">20.76&percnt; <i class="fa-solid fa-caret-up"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)">4.05&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Ayaas</td>
+            <td data-label="Population Percentage (2020)">0.16&percnt;</td>
+            <td data-label="Population (2020)">180</td>
+            <td data-label="Population (2015)">230</td>
+            <td data-label="Change (2015-20202)" style="color: red">-21.74&percnt; <i class="fa-solid fa-caret-down"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-5.03&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Baguio</td>
+             <td data-label="Population Percentage (2020)">2.85&percnt;</td>
+             <td data-label="Population (2020)">3,208</td>
+             <td data-label="Population (2015)">2,571</td>
+             <td data-label="Change (2015-20202)">24.78&percnt; <i class="fa-solid fa-caret-up"></i></td>
+             <td data-label="Annual Population Growth Rate (2015-2020)">4.77&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Banilad</td>
+            <td data-label="Population Percentage (2020)">0.13&percnt;</td>
+            <td data-label="Population (2020)">149</td>
+            <td data-label="Population (2015)">313</td>
+            <td data-label="Change (2015-20202)">-52.40&percnt; <i class="fa-solid fa-caret-up"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)">-14.46&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Bukal Ibaba</td>
+            <td data-label="Population Percentage (2020)">0.70&percnt;</td>
+            <td data-label="Population (2020)">794</td>
+            <td data-label="Population (2015)">743</td>
+            <td data-label="Change (2015-20202)">6.86&percnt; <i class="fa-solid fa-caret-up"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)">1.41&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Bukal Ilaya</td>
+            <td data-label="Population Percentage (2020)">0.70&percnt;</td>
+            <td data-label="Population (2020)">784</td>
+            <td data-label="Population (2015)">555</td>
+            <td data-label="Change (2015-20202)">41.26&percnt; <i class="fa-solid fa-caret-up"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)">7.54&percnt; <i class="fa-solid fa-caret-up"></i></td>
+         </tr>
+         <tr>
+            <td data-label="Barangay">Calantas</td>
+            <td data-label="Population Percentage (2020)">0.28&percnt;</td>
+            <td data-label="Population (2020)">313</td>
+            <td data-label="Population (2015)">270</td>
+            <td data-label="Change (2015-20202)">15.93&percnt; <i class="fa-solid fa-caret-up"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)">3.16&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Calumpang</td>
+            <td data-label="Population Percentage (2020)">4.81&percnt;</td>
+            <td data-label="Population (2020)">5,424</td>
+            <td data-label="Population (2015)">4,537</td>
+            <td data-label="Change (2015-20202)">19.55&percnt; <i class="fa-solid fa-caret-up"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)">3.83&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Camaysa</td>
+            <td data-label="Population Percentage (2020)">2.16&percnt;</td>
+            <td data-label="Population (2020)">2,438</td>
+            <td data-label="Population (2015)">2,234</td>
+            <td data-label="Change (2015-20202)">9.13&percnt; <i class="fa-solid fa-caret-up"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)">1.86&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+            <td data-label="Barangay">Dapdap</td>
+            <td data-label="Population Percentage (2020)">2.85&percnt;</td>
+            <td data-label="Population (2020)">3,212</td>
+            <td data-label="Population (2015)">2,413</td>
+            <td data-label="Change (2015-20202)">33.11&percnt; <i class="fa-solid fa-caret-up"></i></td>
+            <td data-label="Annual Population Growth Rate (2015-2020)">6.21&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Domoit Kanluran</td>
+                    <td data-label="Population Percentage (2020)">1.19&percnt;</td>
+                    <td data-label="Population (2020)">1,345</td>
+                    <td data-label="Population (2015)">495</td>
+                    <td data-label="Change (2015-20202)">171.72&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">23.42&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Domoit Silangan</td>
+                    <td data-label="Population Percentage (2020)">0.57&percnt;</td>
+                    <td data-label="Population (2020)">641</td>
+                    <td data-label="Population (2015)">497</td>
+                    <td data-label="Change (2015-20202)">28.97&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">5.50&percnt; <i class="fa-solid fa-caret-up"></i></td>
+       </tr>
+       <tr>
+                    <td data-label="Barangay">Gibanga</td>
+                    <td data-label="Population Percentage (2020)">0.84&percnt;</td>
+                    <td data-label="Population (2020)">944</td>
+                    <td data-label="Population (2015)">943</td>
+                    <td data-label="Change (2015-20202)">0.11&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">0.02&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Ibas</td>
+                    <td data-label="Population Percentage (2020)">0.39&percnt;</td>
+                    <td data-label="Population (2020)">442</td>
+                    <td data-label="Population (2015)">896</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-50.67&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-13.82&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Ilasan Ibaba</td>
+                    <td data-label="Population Percentage (2020)">0.87&percnt;</td>
+                    <td data-label="Population (2020)">982</td>
+                    <td data-label="Population (2015)">966</td>
+                    <td data-label="Change (2015-20202)">1.66&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">0.35&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Ilasan Ilaya</td>
+                    <td data-label="Population Percentage (2020)">2.25&percnt;</td>
+                    <td data-label="Population (2020)">2,538</td>
+                    <td data-label="Population (2015)">2,461</td>
+                    <td data-label="Change (2015-20202)">3.13&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">0.65&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Ipilan</td>
+                    <td data-label="Population Percentage (2020)">4.02&percnt;</td>
+                    <td data-label="Population (2020)">4,527</td>
+                    <td data-label="Population (2015)">4,028</td>
+                    <td data-label="Change (2015-20202)">12.39&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">2.49&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Isabang</td>
+                    <td data-label="Population Percentage (2020)">12.61&percnt;</td>
+                    <td data-label="Population (2020)">14,210</td>
+                    <td data-label="Population (2015)">8,654</td>
+                    <td data-label="Change (2015-20202)">64.20&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">11.00&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Katigan Kanluran</td>
+                    <td data-label="Population Percentage (2020)">0.19&percnt;</td>
+                    <td data-label="Population (2020)">210</td>
+                    <td data-label="Population (2015)">271</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-22.51&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-5.23&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Katigan Silangan</td>
+                    <td data-label="Population Percentage (2020)">0.30&percnt;</td>
+                    <td data-label="Population (2020)">342</td>
+                    <td data-label="Population (2015)">388</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-11.86&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-2.62&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+         <tr>
+                    <td data-label="Barangay">Lakawan</td>
+                    <td data-label="Population Percentage (2020)">1.50&percnt;</td>
+                    <td data-label="Population (2020)">1,689</td>
+                    <td data-label="Population (2015)">1,438 </td>
+                    <td data-label="Change (2015-20202)">17.45&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">3.44&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Lalo</td>
+                    <td data-label="Population Percentage (2020)">4.12&percnt;</td>
+                    <td data-label="Population (2020)">4,647</td>
+                    <td data-label="Population (2015)">4,055</td>
+                    <td data-label="Change (2015-20202)">14.60&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">2.91&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Lawigue</td>
+                    <td data-label="Population Percentage (2020)">2.21&percnt;</td>
+                    <td data-label="Population (2020)">2,487</td>
+                    <td data-label="Population (2015)">2,184</td>
+                    <td data-label="Change (2015-20202)">13.87&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">2.77&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Lita</td>
+                    <td data-label="Population Percentage (2020)">3.62&percnt;</td>
+                    <td data-label="Population (2020)">4,079</td>
+                    <td data-label="Population (2015)">4,599</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-11.31&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-2.49&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Malaoa</td>
+                    <td data-label="Population Percentage (2020)">1.16&percnt;</td>
+                    <td data-label="Population (2020)">1,306</td>
+                    <td data-label="Population (2015)">1,319</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-0.99&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-0.21&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Masin</td>
+                    <td data-label="Population Percentage (2020)">1.18&percnt;</td>
+                    <td data-label="Population (2020)">1,333</td>
+                    <td data-label="Population (2015)">1,332</td>
+                    <td data-label="Change (2015-20202)">0.08&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">0.02&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Mate</td>
+                    <td data-label="Population Percentage (2020)">0.77&percnt;</td>
+                    <td data-label="Population (2020)">863</td>
+                    <td data-label="Population (2015)">704</td>
+                    <td data-label="Change (2015-20202)">22.59&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">4.38&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Mateuna</td>
+                    <td data-label="Population Percentage (2020)">5.92&percnt;</td>
+                    <td data-label="Population (2020)">6,669</td>
+                    <td data-label="Population (2015)">6,041 </td>
+                    <td data-label="Change (2015-20202)">10.40&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">2.10&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Mayowe</td>
+                    <td data-label="Population Percentage (2020)">0.76&percnt;</td>
+                    <td data-label="Population (2020)">860</td>
+                    <td data-label="Population (2015)">752</td>
+                    <td data-label="Change (2015-20202)">14.36&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">2.86&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Nangka Ibaba</td>
+                    <td data-label="Population Percentage (2020)">0.89&percnt;</td>
+                    <td data-label="Population (2020)">1,008</td>
+                    <td data-label="Population (2015)">843</td>
+                    <td data-label="Change (2015-20202)">19.57&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">3.83&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Nangka Ilaya</td>
+                    <td data-label="Population Percentage (2020)">0.71&percnt;</td>
+                    <td data-label="Population (2020)">805</td>
+                    <td data-label="Population (2015)">789</td>
+                    <td data-label="Change (2015-20202)">2.03&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">0.42&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Opias</td>
+                    <td data-label="Population Percentage (2020)">5.46&percnt;</td>
+                    <td data-label="Population (2020)">6,150</td>
+                    <td data-label="Population (2015)">5,592</td>
+                    <td data-label="Change (2015-20202)">9.98&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">2.02&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Palale Ibaba</td>
+                    <td data-label="Population Percentage (2020)">3.53&percnt;</td>
+                    <td data-label="Population (2020)">3,976</td>
+                    <td data-label="Population (2015)">3,737</td>
+                    <td data-label="Change (2015-20202)">6.40&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">1.31&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Palale Ilaya</td>
+                    <td data-label="Population Percentage (2020)">0.77&percnt;</td>
+                    <td data-label="Population (2020)">862</td>
+                    <td data-label="Population (2015)">878</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-1.82&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-0.39&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Palale Kanluran</td>
+                    <td data-label="Population Percentage (2020)">1.83&percnt;</td>
+                    <td data-label="Population (2020)">2,057</td>
+                    <td data-label="Population (2015)">1,655</td>
+                    <td data-label="Change (2015-20202)">24.29&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">4.68&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Palale Silangan</td>
+                    <td data-label="Population Percentage (2020)">2.88&percnt;</td>
+                    <td data-label="Population (2020)">3,244</td>
+                    <td data-label="Population (2015)">2,917</td>
+                    <td data-label="Change (2015-20202)">11.21&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">2.26&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Pandakaki</td>
+                    <td data-label="Population Percentage (2020)">0.53&percnt;</td>
+                    <td data-label="Population (2020)">596</td>
+                    <td data-label="Population (2015)">672</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-11.31&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-2.49&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Pook</td>
+                    <td data-label="Population Percentage (2020)">0.24&percnt;</td>
+                    <td data-label="Population (2020)">267</td>
+                    <td data-label="Population (2015)">193</td>
+                    <td data-label="Change (2015-20202)">38.34&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">7.07&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Potol</td>
+                    <td data-label="Population Percentage (2020)">0.98&percnt;</td>
+                    <td data-label="Population (2020)">1,108</td>
+                    <td data-label="Population (2015)">936</td>
+                    <td data-label="Change (2015-20202)">18.38&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">3.61&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">San Diego Zone I</td>
+                    <td data-label="Population Percentage (2020)">0.38&percnt;</td>
+                    <td data-label="Population (2020)">431</td>
+                    <td data-label="Population (2015)">583</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-26.07&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-6.16&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">San Diego Zone II</td>
+                    <td data-label="Population Percentage (2020)">0.36&percnt;</td>
+                    <td data-label="Population (2020)">410</td>
+                    <td data-label="Population (2015)">450</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-8.89&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-1.94&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">San Diego Zone III</td>
+                    <td data-label="Population Percentage (2020)">0.26&percnt;</td>
+                    <td data-label="Population (2020)">291</td>
+                    <td data-label="Population (2015)">433</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-32.79&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-8.02&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">San Diego Zone IV</td>
+                    <td data-label="Population Percentage (2020)">0.37&percnt;</td>
+                    <td data-label="Population (2020)">413</td>
+                    <td data-label="Population (2015)">604</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-31.62&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-7.69&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">San Isidro Zone I</td>
+                    <td data-label="Population Percentage (2020)">0.51&percnt;</td>
+                    <td data-label="Population (2020)">575</td>
+                    <td data-label="Population (2015)">616</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-6.66&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-1.44&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">San Isidro Zone II</td>
+                    <td data-label="Population Percentage (2020)">0.43&percnt;</td>
+                    <td data-label="Population (2020)">484</td>
+                    <td data-label="Population (2015)">639</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-24.26&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-5.68&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">San Isidro Zone III</td>
+                    <td data-label="Population Percentage (2020)">1.04&percnt;</td>
+                    <td data-label="Population (2020)">1,167</td>
+                    <td data-label="Population (2015)">1,384</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-15.68&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-3.53&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">San Isidro Zone IV</td>
+                    <td data-label="Population Percentage (2020)">0.68&percnt;</td>
+                    <td data-label="Population (2020)">761</td>
+                    <td data-label="Population (2015)">949</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-19.81&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-4.54&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">San Roque Zone I</td>
+                    <td data-label="Population Percentage (2020)">0.14&percnt;</td>
+                    <td data-label="Population (2020)">162</td>
+                    <td data-label="Population (2015)">215</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-24.65&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-5.78&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">San Roque Zone II</td>
+                    <td data-label="Population Percentage (2020)">0.86&percnt;</td>
+                    <td data-label="Population (2020)">973</td>
+                    <td data-label="Population (2015)">1,116</td>
+                    <td data-label="Change (2015-20202)" style="color: red">-12.81&percnt; <i class="fa-solid fa-caret-down"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)" style="color: red">-2.84&percnt; <i class="fa-solid fa-caret-down"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Talolong</td>
+                    <td data-label="Population Percentage (2020)">0.22&percnt;</td>
+                    <td data-label="Population (2020)">248</td>
+                    <td data-label="Population (2015)">82</td>
+                    <td data-label="Change (2015-20202)"></style>26.23&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">-14.46&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Tamlong</td>
+                    <td data-label="Population Percentage (2020)">0.24&percnt;</td>
+                    <td data-label="Population (2020)">266</td>
+                    <td data-label="Population (2015)">228</td>
+                    <td data-label="Change (2015-20202)">16.67&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">3.30&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Tongko</td>
+                    <td data-label="Population Percentage (2020)">1.80&percnt;</td>
+                    <td data-label="Population (2020)">2,023</td>
+                    <td data-label="Population (2015)">1,748</td>
+                    <td data-label="Change (2015-20202)">15.73&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">3.12&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Valencia</td>
+                    <td data-label="Population Percentage (2020)">0.42&percnt;</td>
+                    <td data-label="Population (2020)">468</td>
+                    <td data-label="Population (2015)">392</td>
+                    <td data-label="Change (2015-20202)">19.39&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">3.80&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td data-label="Barangay">Wakas</td>
+                    <td data-label="Population Percentage (2020)">0.17&percnt;</td>
+                    <td data-label="Population (2020)">193</td>
+                    <td data-label="Population (2015)">123</td>
+                    <td data-label="Change (2015-20202)">56.91&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020)">9.95&percnt; <i class="fa-solid fa-caret-up"></i></td>
+        </tr>
+        <tr>
+                    <td colspan="2" style="font-weight: 700">Tayabas Total</td>
+                    <td data-label="Population (2020)" style="font-weight: bold">112,658</td>
+                    <td data-label="Population (2015)" style="font-weight: bold">99,779</td>
+                    <td data-label="Change (2015-20202)" style="font-weight: bold">12.91&percnt; <i class="fa-solid fa-caret-up"></i></td>
+                    <td data-label="Annual Population Growth Rate (2015-2020) " style="font-weight: 1000">2.59&percnt; <i class="fa-solid fa-caret-up"></i></td>
+
+
+            </tr>
+        </tbody>
+    </table>
+    <section class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/tayabascicro"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/TuklasTayabas"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    
+        <ul class="list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="governance.html">GOVERNANCE</a></li>
+            <li><a href="barangay.html">BARANGAY</a></li>
+            <li><a href="heritage.html">HERITAGE</a></li>
+            <li><a href="tourism.html">TOURISM</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    
+        <p class="copyright">
+            Copyright &copy; 2023
+        </p>
+    </section>
+
+
+    <script>
+        $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

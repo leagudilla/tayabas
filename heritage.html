@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Tayabas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header3">
+        <nav>
+            <a href="index.html"><img src="index/logo.png"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="governance.html">GOVERNANCE</a></li>
+                    <li><a href="barangay.html">BARANGAY</a></li>
+                    <li><a href="heritage.html">HERITAGE</a></li>
+                    <li><a href="tourism.html">TOURISM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>HISTORICAL LANDMARKS AND <br> HERITAGE IN TAYABAS</h1>
+    </section>
+
+
+    <!--BRIDGES-->
+    
+<section class="container">
+  <div class="row justify-content-center mb-4">
+    <div class="col-lg-6">
+      <input type="text" id="searchInput" class="form-control" placeholder="Search...">
+    </div>
+    <div class="bridges">
+      <h1>THE SPANISH ERA COLONIAL BRIDGES OF TAYABAS</h1>
+      <p>The Spanish colonial bridges in Tayabas are bridges built during the Spanish-colonial era in Tayabas, Quezon. The city government of Tayabas declared eleven bridges 
+          in the city as Historical bridges of Tayabas for protection purposes. These are the bridges of <em style="color: #ff1e8e;">Alitao, Isabel II, Urbiztondo, Don Francisco de Asis, Bai, Despedidas, 
+          Ese, Princesa, Malagonlong, Lakawan and Mate</em>. In 2011, ten bridges in Tayabas was declared as National Cultural Treasure under the Historic Bridges of Tayabas. The 
+          declared national cultural treasures under the list are the bridges of <em style="color: #ff1e8e;">Alitao, Isabel II, Don Francisco de Asis, Gibanga, Malagonlong, Lakawan, Mate, Ese, Despedida, 
+          Tumuloy and Princesa</em>.</p>
+</div>
+  <ul id="heritageList" class="heritage-list">
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/alitao.jpg" alt="Heritage 1" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>1. Puente de Alitao, Poblacion</h3>
+            <p>These arch bridges are easy to be missed. Concrete roads were built over the pavements covering the old carriageway while some have been widened with reinforced 
+                concrete constructions as part of a new parallel bridge structure. Most of the bridges have retained their width as defined by the existing stone masonry parapets 
+                and can be viewed from the riverbanks. The deterioration of these heritage properties is mainly caused by negligence, lack of awareness, and undesirable man-made 
+                interventions. It’s a good thing that the Local Government Unit of Tayabas City is actively preserving their Spanish-Era Colonial Bridges with the annual removal 
+                and treatment of vegetation as well as the masonry cleaning of these bridges.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/isabel.jpg" alt="Heritage 2" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>2. Puente de Isabel II in Barangay Baguio</h3>
+            <p>A bridge with more than one arch is Puente de Isabel II in Barangay Baguio. Built with two arches along Tayabas-Sariaya road over Iyam River. 
+                The bridge was finished in 1853 and named after Queen Isabel II of Spain. The bridge is still intact and passable but restricted to light weight vehicles. 
+                Only one arch can be accessed by the public since the other arch is inside a private resort.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/urbiztondo.jpg" alt="Heritage 3" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>3. Puente de Urbiztondo Tayabas</h3>
+            <p>This bridge was named after Governor-general Antonio de Urbiztondo. It is located in Barangay Malao-a and was built using 10,651 adobe pieces on August 31, 1854. It has 
+                one arch, is 60 feet tall, and 39 feet wide.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/deasis.jpg" alt="Heritage 4" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>4. Puente de Don Francisco de Asis</h3>
+            <p>This bridge is named after Queen Isabel II's husband. It was completed on October 15th year 1854. They used 9,967 adobe with one arch, height 60 feet and width 36 feet. 
+                It is now located in Barangay Domoit which is currently in the City of Lucena.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/dapdap.png" alt="Heritage 5" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>5. Puente de Bai in Barangay Dapdap</h3>
+            <p> Puente de Bai, also known as Puente de Tumuloy in Barangay Dapdap was part of an old road going to Palola, Lucban. The one arch stone bridge crosses the Bai Creek
+                and served as the boundary of Tayabas and Lucban. It stands 7-meters high and 7-meters wide. Concrete road was built along the carriageway and is still passable 
+                to pedestrians and light weight vehicles. The lands on the vicinity of the bridge are privately owned.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/lalo.jpg" alt="Heritage 6" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>6. Puente de las Despedidas in Barangay Lalo</h3>
+            <p> Puente de las Despedidas known as the “Farewell Bridge”, was the end road of Tayabas and the old route going to Manila or Laguna. It was built with one arch over 
+                Bigger Ibia River in Barangay Lalo. Only the spandrel wall, arch barrel, and abutments still exist. Concrete bridge was later constructed above the spandrel and is 
+                passable to all type of vehicles. Both sides of the vicinity of the bridge are maintained as open spaces and can be accessed by the public.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/ese.jpg" alt="Heritage 7" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>7. Puente de la Ese</h3>
+            <p><p>The Puente de la Ese is in Barangay Camaysa which also has an arch.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/princesa.JPG" alt="Heritage 8" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>8. Puente de la Princesa Tayabas</h3>
+            <p>Puente de la Princesa, named after the Princess of Asturias of Northern Spain. Unfortunately, the bridge was bombed during World War II and only the stone abutments remains. 
+        A deck made of reinforced concrete was built over the ruins.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/malagonlong.jpg" alt="Heritage 9" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>9. Puente de Malagonlong</h3>
+            <p>Puente de Malagonlong or Malagonlong Bridge is a 445 foot-long five-span bridge built in 1841. The National Historical Institute’s Historical marker described Malagonlong 
+                as the longest bridge ever made during the Spanish colonial era, with approximately 100,000 adobe blocks used. Considered one of this city’s most important heritage sites, 
+                Malagonlong Bridge is now closed to traffic after the new bridge across the Dumacaa river was completed. Among the eleven (11) stone masonry bridges found in Tayabas City, 
+                Malogonlong Bridge is one of the oldest and longest stone arched bridges. The bridge was built under the direction of the “Ministro del Pueblo,” Fray Antonio, a Franciscan 
+                priest, between 1840 to 1850. The bridge was made by the people of Tayabas through forced labor, also known as “Polo” labor. It is estimated that 100 000 adobe blocks were 
+                used to build the bridge. An inscription on the bridge indicates that it was inaugurated in 1850 under the term of Gobernadorcillo Don Julian S. Francisco.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/lakawan.jpg" alt="Heritage 10" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>10. Puente del Lakawan</h3>
+            <p>The Puente de Lakawan which is in Barangay Lakawan and it crosses the road to Mauban and has an arch.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/mate.jpg" alt="Heritage 11" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>11. Puente del Mate</h3>
+            <p>Next is the Puente de Mate which is on the road to Pagbilao (Barangay Mate) and also has an arch.</p>
+          </div>
+        </div>
+      </li>
+      <h1>Ancestral House and Church</h1>
+      <p>Tayabas is also know for its Ancestral House and Church.</p>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/royola.jpg" alt="Heritage 12" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Royola Ancestral House</h3>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/abrigo.jpg" alt="Heritage 13" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Abrigo Ancestral House</h3>
+            <p>Built around the 1960s</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/sumilang.jpg" alt="Heritage 14" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Unfinished Sumilang Ancestral House</h3>
+            <p>Supposed to be the house of the Sumilang Family, unfinished</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/cesar.jpg" alt="Heritage 15" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Dr. Cesar Sia Ancestral House</h3>
+            <p>Dr. Cesar Sia Ancestral House, possibly built in late 1930s</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/ruinsreyes.jpg" alt="Heritage 16" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Ruins of Reyes Ancestral House</h3>
+            <p>Ruins of Reyes Ancestral House, destroyed during the Second World War</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/nagar.jpg" alt="Heritage 17" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Nagar-Torio Ancestral House</h3>
+            <p>Nagar-Torio Ancestral House, owned by Esther Nagar-Torio. Built in the 1900s in Beaux Art style.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/orias.jpg" alt="Heritage 18" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Pedro Orias House</h3>
+            <p>Pedro Orias House, an old stone camarin that was also used as a warehouse</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/sunyat.JPG" alt="Heritage 19" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Tayabas Sun Yat Sen School</h3>
+            <p>Tayabas Sun Yat Sen School, former mansion of Ubaldo Potentiano, made of poured concrete, possibly built in the 1930s</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/casa.jpg" alt="Heritage 20" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Casa Comunidad de Tayabas</h3>
+            <p>Casa Comunidad de Tayabas, built in 1835. Declared a National Historical Landmark by the National Historical Commission of the Philippines</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/dailo.jfif" alt="Heritage 21" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Dailo House</h3>
+            <p>Dailo House, possibly built from late 1870s to 1880s</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/ermite.jpg" alt="Heritage 22" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Ermita de la Virgen de las Angustias Tayabas</h3>
+            <p>A mortuary chapel for the Spanish and Filipino elite during the Spanish Era. Also called Ermita de San Roque.</p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item heritage-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="heritage/basilica.jpg" alt="Heritage 23" class="heritage-image">
+          </div>
+          <div class="col-md-8">
+            <h3>Basilica Minore de San Miguel de Arcangel</h3>
+            <p>The largest church in the province of Quezon. Declared a National Cultural Treasure by the National Museum of the Philippines.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+</section>
+  <!---footer-->
+  <section class="footer">
+    <div class="social">
+        <a href="https://www.facebook.com/tayabascicro"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/TuklasTayabas"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+
+    <ul class="list">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="governance.html">GOVERNANCE</a></li>
+        <li><a href="barangay.html">BARANGAY</a></li>
+        <li><a href="heritage.html">HERITAGE</a></li>
+        <li><a href="tourism.html">TOURISM</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+
+    <p class="copyright">
+        Copyright &copy; 2023
+    </p>
+</section>
+
+
+<script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
